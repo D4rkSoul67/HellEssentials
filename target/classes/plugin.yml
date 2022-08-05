@@ -4,6 +4,9 @@ description: An essential plugin
 author: Kinderix
 main: me.kinderix.HellEssentials.HellMain
 api-version: 1.17
+load: STARTUP
+softdepend:
+  - LuckPerms
 commands:
   feed:
     description: Feed yourself!
@@ -12,16 +15,44 @@ commands:
   heal:
     description: Heal yourself!
     permission: hellessentials.heal
-    usage: Syntax error! Simply type /heal to heal yourelf.
+    usage: Syntax error! Simply type /heal to heal yourself.
+  clear:
+    description: Clear your inventory!
+    permission: hellessentials.clear
+    usage: Syntax error! Simply type /clear to clear your inventory.
+  gmc:
+    description: Changes gamemode to creative!
+    permission: hellessentials.gamemode.creative
+    usage: Syntax error! Simply type /gmc to change to gamemode creative.
+  gms:
+    description: Changes gamemode to survival!
+    permission: hellessentials.gamemode.survival
+    usage: Syntax error! Simply type /gms to change gamemode to survival.
   permissions:
     hellessentials.*:
       description: Gives access to all HellEssentials commands
       children:
         hellessentials.feed: true
         hellessentials.heal: true
+        hellessentials.clear: true
+        hellessentials.gamemode.*: true
+    hellessentials.gamemode.*:
+      description: Gives access to all gamemodes
+      children:
+        hellessentials.gamemode.creative: true
+        hellessentials.gamemode.survival: true
     hellessentials.feed:
       description: Allows you to feed yourself
       default: true
     hellessentials.heal:
       description: Allows you to heal yourself
-      default: true
+      default: false
+    hellessentials.clear:
+      descriptiron: Allows to clear your or someone's inventory
+      default: false
+    hellessentials.gamemode.creative:
+      description: Allow you to change gamemode to creative
+      default: false
+    hellessentials.gamemode.survival:
+      description: Allow you to change gamemode to survival
+      default: false

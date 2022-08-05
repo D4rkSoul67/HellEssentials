@@ -1,7 +1,6 @@
 package me.kinderix.HellEssentials;
 
-import me.kinderix.HellEssentials.commands.FeedCommand;
-import me.kinderix.HellEssentials.commands.HealCommand;
+import me.kinderix.HellEssentials.commands.*;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,7 +11,9 @@ public class HellMain extends JavaPlugin {
         System.out.println(ChatColor.RED + "HellEssentials" + ChatColor.WHITE + "has been loaded");
         this.getCommand("feed").setExecutor(new FeedCommand());
         this.getCommand("heal").setExecutor(new HealCommand());
-        getServer().getPluginManager().registerEvents(new onPlayerJoin(), this);
+        this.getCommand("clear").setExecutor(new ClearCommand());
+        this.getCommand("gmc").setExecutor(new CreativeCommand());
+        this.getCommand("gms").setExecutor(new SurvivalCommand());
     }
 
     @Override
