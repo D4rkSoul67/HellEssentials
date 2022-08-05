@@ -13,6 +13,7 @@ public class SpectatorCommand implements CommandExecutor {
         Player target = (Player) sender;
         if (sender instanceof Player) {
             target.setGameMode(GameMode.SPECTATOR);
+            target.sendMessage("Your gamemode has been changed.");
         }
         else {
             System.out.println("You need to be a player to run this command!");
