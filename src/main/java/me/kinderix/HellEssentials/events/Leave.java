@@ -12,8 +12,8 @@ public class Leave implements Listener {
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        String name = player.getName();
-        Bukkit.broadcastMessage(ChatColor.RED + "[+] " + ChatColor.GRAY + name );
+        String name = player.getDisplayName();
+        Bukkit.broadcastMessage(ChatColor.RED + "[-] " + ChatColor.GRAY + name );
         event.setQuitMessage("");
     }
 }

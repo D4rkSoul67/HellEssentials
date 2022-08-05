@@ -40,6 +40,10 @@ commands:
     description: Teleport to a player
     permission: hellessentials.tp
     usage: Syntax error! Simply type /tp to teleport.
+  kick:
+    description: Kicks a player
+    permission: hellessentials.kick
+    usage: Syntax error! Simply type /kick to kick a player.
   permissions:
     hellessentials.*:
       description: Gives access to all HellEssentials commands
@@ -49,6 +53,7 @@ commands:
         hellessentials.clear: true
         hellessentials.gamemode.*: true
         hellessentials.tp: true
+        hellessentials.kick: true
     hellessentials.gamemode.*:
       description: Gives access to all gamemodes
       children:
@@ -56,7 +61,6 @@ commands:
         hellessentials.gamemode.survival: true
         hellessentials.gamemode.spectator: true
         hellessentials.gamemode.adventure: true
-        hellessentials.tp: true
     hellessentials.feed:
       description: Allows you to feed yourself
       default: true
@@ -80,4 +84,7 @@ commands:
       default: false
     hellessentials.tp:
       description: Allow you to teleport to a player
+      default: false
+    hellessentials.kick:
+      description: Allow you to kick a player
       default: false

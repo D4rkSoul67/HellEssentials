@@ -8,6 +8,7 @@ import me.kinderix.HellEssentials.commands.gamemode.AdventureCommand;
 import me.kinderix.HellEssentials.commands.gamemode.CreativeCommand;
 import me.kinderix.HellEssentials.commands.gamemode.SpectatorCommand;
 import me.kinderix.HellEssentials.commands.gamemode.SurvivalCommand;
+import me.kinderix.HellEssentials.commands.moderation.KickCommand;
 import me.kinderix.HellEssentials.events.Join;
 import me.kinderix.HellEssentials.events.Leave;
 import org.bukkit.ChatColor;
@@ -26,6 +27,7 @@ public class HellMain extends JavaPlugin {
         this.getCommand("gmsp").setExecutor(new SpectatorCommand());
         this.getCommand("gma").setExecutor(new AdventureCommand());
         this.getCommand("tp").setExecutor(new TeleportCommand());
+        this.getCommand("kick").setExecutor(new KickCommand());
         getServer().getPluginManager().registerEvents(new Join(), this);
         getServer().getPluginManager().registerEvents(new Leave(), this);
     }
