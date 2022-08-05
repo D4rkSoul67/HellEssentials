@@ -1,4 +1,4 @@
-package me.kinderix.HellEssentials.commands;
+package me.kinderix.HellEssentials.commands.gamemode;
 
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;

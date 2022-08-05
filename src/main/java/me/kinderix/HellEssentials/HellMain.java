@@ -1,6 +1,15 @@
 package me.kinderix.HellEssentials;
 
-import me.kinderix.HellEssentials.commands.*;
+import me.kinderix.HellEssentials.commands.essentials.ClearCommand;
+import me.kinderix.HellEssentials.commands.essentials.FeedCommand;
+import me.kinderix.HellEssentials.commands.essentials.HealCommand;
+import me.kinderix.HellEssentials.commands.essentials.TeleportCommand;
+import me.kinderix.HellEssentials.commands.gamemode.AdventureCommand;
+import me.kinderix.HellEssentials.commands.gamemode.CreativeCommand;
+import me.kinderix.HellEssentials.commands.gamemode.SpectatorCommand;
+import me.kinderix.HellEssentials.commands.gamemode.SurvivalCommand;
+import me.kinderix.HellEssentials.events.Join;
+import me.kinderix.HellEssentials.events.Leave;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -16,6 +25,9 @@ public class HellMain extends JavaPlugin {
         this.getCommand("gms").setExecutor(new SurvivalCommand());
         this.getCommand("gmsp").setExecutor(new SpectatorCommand());
         this.getCommand("gma").setExecutor(new AdventureCommand());
+        this.getCommand("tp").setExecutor(new TeleportCommand());
+        getServer().getPluginManager().registerEvents(new Join(), this);
+        getServer().getPluginManager().registerEvents(new Leave(), this);
     }
 
     @Override

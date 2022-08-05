@@ -36,6 +36,10 @@ commands:
     description: Changes gamemode to adventure!
     permission: hellessentials.gamemode.adventure
     usage: Syntax error! Simply type /gma to change gamemode to adventure.
+  tp:
+    description: Teleport to a player
+    permission: hellessentials.tp
+    usage: Syntax error! Simply type /tp to teleport.
   permissions:
     hellessentials.*:
       description: Gives access to all HellEssentials commands
@@ -44,6 +48,7 @@ commands:
         hellessentials.heal: true
         hellessentials.clear: true
         hellessentials.gamemode.*: true
+        hellessentials.tp: true
     hellessentials.gamemode.*:
       description: Gives access to all gamemodes
       children:
@@ -51,6 +56,7 @@ commands:
         hellessentials.gamemode.survival: true
         hellessentials.gamemode.spectator: true
         hellessentials.gamemode.adventure: true
+        hellessentials.tp: true
     hellessentials.feed:
       description: Allows you to feed yourself
       default: true
@@ -71,4 +77,7 @@ commands:
       default: false
     hellessentials.gamemode.adventure:
       description: Allow you to change gamemode to adventure
+      default: false
+    hellessentials.tp:
+      description: Allow you to teleport to a player
       default: false

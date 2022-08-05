@@ -1,4 +1,4 @@
-package me.kinderix.HellEssentials.commands;
+package me.kinderix.HellEssentials.commands.essentials;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

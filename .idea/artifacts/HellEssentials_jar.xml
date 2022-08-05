@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="HellEssentials:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HellEssentials_jar</output-path>
+    <root id="archive" name="HellEssentials.jar">
+      <element id="module-output" name="HellEssentials" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c382ffac-d5d9-4896-9ea9-05b392f94aea" name="Changes" comment="Added SpectatorCommand">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinderix/HellEssentials/commands/AdventureCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinderix/HellEssentials/commands/SpectatorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinderix/HellEssentials/commands/SpectatorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-    </list>
+    <list default="true" id="c382ffac-d5d9-4896-9ea9-05b392f94aea" name="Changes" comment="Added AdventureCommand" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +24,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2CrBcbUffVAxPceMULYPsLp3yu1" />
   <component name="ProjectViewState">
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659707907045</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added AdventureCommand">
+      <created>1659711024269</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659711024269</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added ClearCommand and Gamemode change commands" />
     <MESSAGE value="Added SpectatorCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SpectatorCommand" />
+    <MESSAGE value="Added AdventureCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AdventureCommand" />
   </component>
 </project>
