@@ -44,6 +44,9 @@ commands:
     description: Kicks a player
     permission: hellessentials.kick
     usage: Syntax error! Simply type /kick to kick a player.
+  mutechat:
+    description: Mutes the chat
+    permission: hellessentials.mutechat.use
   permissions:
     hellessentials.*:
       description: Gives access to all HellEssentials commands
@@ -54,6 +57,8 @@ commands:
         hellessentials.gamemode.*: true
         hellessentials.tp: true
         hellessentials.kick: true
+        hellessentials.mutechat.use: true
+        hellessentials.mutechat.bypass: true
     hellessentials.gamemode.*:
       description: Gives access to all gamemodes
       children:
@@ -87,4 +92,10 @@ commands:
       default: false
     hellessentials.kick:
       description: Allow you to kick a player
+      default: false
+    hellessentials.mutechat.use:
+      description: Allow you to mute the chat
+      default: false
+    hellessentials.mutechat.bypass:
+      description: Allow you to bypass mutechat
       default: false

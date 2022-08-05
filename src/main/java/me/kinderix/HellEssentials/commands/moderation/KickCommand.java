@@ -12,12 +12,9 @@ public class KickCommand implements CommandExecutor {
     public boolean onCommand(CommandSender executor, Command command, String label, String[] args) {
         Player target;
 
-        if (args.length == 0 && !(executor instanceof Player)) {
+        if (args.length == 0) {
             executor.sendMessage(ChatColor.RED + "You must specify a player.");
             return true;
-        }
-        if (args.length == 0) {
-            target = (Player) executor;
         }
         else {
             target = Bukkit.getServer().getPlayer(args[0]);
