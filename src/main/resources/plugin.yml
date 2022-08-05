@@ -1,0 +1,27 @@
+name: HellEssentials
+version: 1.0
+description: An essential plugin
+author: Kinderix
+main: me.kinderix.HellEssentials.HellMain
+api-version: 1.17
+commands:
+  feed:
+    description: Feed yourself!
+    permission: hellessentials.feed
+    usage: Syntax error! Simply type /feed to feed yourself.
+  heal:
+    description: Heal yourself!
+    permission: hellessentials.heal
+    usage: Syntax error! Simply type /heal to heal yourself.
+  permissions:
+    hellessentials.*:
+      description: Gives access to all HellEssentials commands
+      children:
+        hellessentials.feed: true
+        hellessentials.heal: true
+    hellessentials.feed:
+      description: Allows you to feed yourself
+      default: true
+    hellessentials.heal:
+      description: Allows you to heal yourself
+      default: true
