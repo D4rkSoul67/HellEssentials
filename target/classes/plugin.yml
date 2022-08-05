@@ -30,8 +30,12 @@ commands:
     usage: Syntax error! Simply type /gms to change gamemode to survival.
   gmsp:
     description: Changes gamemode to spectator!
-    permission: : hellessentials.gamemode.spectator
+    permission: hellessentials.gamemode.spectator
     usage: Syntax error! Simply type /gmsp to change gamemode to spectator.
+  gma:
+    description: Changes gamemode to adventure!
+    permission: hellessentials.gamemode.adventure
+    usage: Syntax error! Simply type /gma to change gamemode to adventure.
   permissions:
     hellessentials.*:
       description: Gives access to all HellEssentials commands
@@ -46,6 +50,7 @@ commands:
         hellessentials.gamemode.creative: true
         hellessentials.gamemode.survival: true
         hellessentials.gamemode.spectator: true
+        hellessentials.gamemode.adventure: true
     hellessentials.feed:
       description: Allows you to feed yourself
       default: true
@@ -63,4 +68,7 @@ commands:
       default: false
     hellessentials.gamemode.spectator:
       description: Allow you to change gamemode to spectator
+      default: false
+    hellessentials.gamemode.adventure:
+      description: Allow you to change gamemode to adventure
       default: false

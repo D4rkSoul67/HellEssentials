@@ -15,6 +15,7 @@ public class HellMain extends JavaPlugin {
         this.getCommand("gmc").setExecutor(new CreativeCommand());
         this.getCommand("gms").setExecutor(new SurvivalCommand());
         this.getCommand("gmsp").setExecutor(new SpectatorCommand());
+        this.getCommand("gma").setExecutor(new AdventureCommand());
     }
 
     @Override
